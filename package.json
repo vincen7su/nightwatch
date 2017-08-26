@@ -1,0 +1,17 @@
+{
+  "name": "nightwatch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "vincen7su",
+  "license": "MIT",
+  "devDependencies": {
+    "nightwatch": "^0.9.16",
+    "selenium-download": "^2.0.10"
+  },
+  "dependencies": {
+    "env2": "^2.2.0"
+  },
+  "scripts": {
+    "e2e": "nightwatch --config nightwatch.conf.js"
+  }
+}
