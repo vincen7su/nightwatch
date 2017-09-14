@@ -2,16 +2,17 @@
   "name": "nightwatch",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "vincen7su",
+  "repository": "https://github.com/vincen7su/nightwatch.git",
+  "author": "vincen7su <31243646+vincen7su@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
     "nightwatch": "^0.9.16",
-    "selenium-download": "^2.0.10"
-  },
-  "dependencies": {
-    "env2": "^2.2.0"
+    "webdriver-manager": "^12.0.6"
   },
   "scripts": {
-    "e2e": "nightwatch --config nightwatch.conf.js"
+    "install": "webdriver-manager update",
+    "start": "webdriver-manager start",
+    "stop": "webdriver-manager shutdown",
+    "e2e": "nightwatch"
   }
 }
